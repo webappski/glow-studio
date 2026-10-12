@@ -19,5 +19,10 @@ export default defineNuxtConfig({
       ],
     },
   },
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => tag === 'typeless-form',
+    }
+  },
   css: ['~/assets/css/main.css'],
 });
